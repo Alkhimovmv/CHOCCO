@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap");
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #666666;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px;
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  background: url("../img/decor/big-leaf.png") right bottom no-repeat;
+  background-color: #61C4D9;
+  height: 100vh;
+  min-height: 650px;
+  color: #ffffff;
+  position: relative;
+}
+.hero:before {
+  content: url("../img/decor/corner-leaf.png");
+  position: absolute;
+  bottom: -40px;
+  left: 2%;
+}
+.hero:after {
+  content: url("../img/decor/berries-and-leaves.png");
+  position: absolute;
+  bottom: -55px;
+  right: 17px;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px 0;
+  background: url("../img/decor/chocolates.png") right center no-repeat;
+}
+.hero__title-section {
+  width: 46%;
+}
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 45px;
+  padding-right: 14%;
+  line-height: 1.2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 26px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__link {
+  text-decoration: none;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.phone-number {
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+.phone-number__icon-elem {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.logo {
+  padding-left: 4px;
+}
+
+.features {
+  display: flex;
+}
+.features__item {
+  margin-right: 49px;
+}
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.feature {
+  display: flex;
+}
+.feature__icon {
+  width: 45px;
+  margin-right: 7px;
+}
+.feature__text {
+  font-size: 16px;
+  width: 75px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+}
+.btn--color--white {
+  background: #ffffff;
+  color: #0b4d3c;
+}
+.btn--color--white:hover {
+  color: #ffffff;
+  background: #0b4d3c;
+}
+.btn--color--green {
+  background: #0b4d3c;
+  color: #ffffff;
+}
+.btn--color--green:hover {
+  color: #0b4d3c;
+  background: #ffffff;
+}
+.btn--color--transparent {
+  background: transparent;
+  columns: #000000;
+  text-transform: none;
+}
+.btn--color--transparent:hover {
+  color: #0b4d3c;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+.section__title-reviews {
+  margin-bottom: 28px;
+}
+.section--font-color--green {
+  color: #0b4d3c;
+}
+.section--font-color--green .section__title {
+  color: inherit;
+}
+
+.headline {
+  text-align: center;
+}
+.headline__title {
+  margin-bottom: 4px;
+}
+.headline__subtitle {
+  padding: 0 26%;
+  margin-bottom: 53px;
+  line-height: 1.2;
+}
+
+.benefits {
+  display: flex;
+}
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item:before {
+  content: url("../img/decor/separator.png");
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+.benefits-section {
+  position: relative;
+  background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
+}
+.benefits-section:before {
+  content: url("../img/decor/bars-and-berries.png");
+  position: absolute;
+  bottom: -124px;
+  left: 0;
+}
+
+.benefit {
+  text-align: center;
+}
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.benefit__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.benefit__image {
+  margin-bottom: 18px;
+}
+.benefit__desc {
+  line-height: 1.2;
+}
+
+.reviews-section {
+  background: url("../img/decor/strawberry.png") right top 66px no-repeat;
+  position: relative;
+}
+.reviews-section:before {
+  content: url("../img/decor/side-leaf-two.png");
+  position: absolute;
+  bottom: -178px;
+  left: 0;
+  z-index: 1;
+}
+.reviews-section:after {
+  content: url("../img/decor/berries.png");
+  position: absolute;
+  bottom: -112px;
+  left: 0;
+  z-index: 10;
+}
+.reviews__display {
+  background: #f8faf9 url("../img/decor/drown-berries.png") right top no-repeat;
+  padding: 50px 45px 34px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+.reviews__display-inner {
+  display: flex;
+}
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+}
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reviews__content {
+  flex: 1;
+  padding-right: 136px;
+  margin-left: 20px;
+  padding-top: 8px;
+}
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: black;
+}
+.reviews__text {
+  margin-bottom: 26px;
+  line-height: 1.25;
+}
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar--active {
+  border-color: #0f5a47;
+}
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-section {
+  background: url("../img/decor/blueberry.png") left 18px bottom 20px no-repeat, url("../img/decor/corner-leaf-two.png") right bottom 20px no-repeat, url("../img/decor/background-form.png") center center;
+  position: relative;
+}
+.order-section:before {
+  content: url("../img/decor/leafs-and-blackberry.png");
+  right: 0;
+  top: -160px;
+  position: absolute;
+}
+
+.form {
+  display: flex;
+}
+.form__btn {
+  padding-top: 30px;
+}
+.form__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+.form__row {
+  display: flex;
+  margin-bottom: 18px;
+}
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+.form__input {
+  width: 100%;
+  border: solid 3px transparent;
+  padding: 18px 11px;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 24px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 5px;
+}
+.radio--checkbox .radio__visible:before {
+  background: url("../img/icons/tick.png") center center no-repeat;
+}
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 5px;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 30%;
+  right: 3%;
+  z-index: 100;
+}
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #ffffff;
+}
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

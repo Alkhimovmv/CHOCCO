@@ -1,0 +1,42 @@
+.benefits{
+    display: flex;
+
+    &__item{
+        flex: 1;
+        padding: 0 3%;
+        position: relative;
+
+        &:before{
+            content: url("../img/decor/separator.png");
+            position: absolute;
+            top: 50px;
+            right: 0;
+            transform: translateX(50%);
+        }
+
+        &:first-child{
+            padding-left: 0;
+        }
+
+        &:last-child{
+            padding-right: 0;
+
+            &:before{
+                display: none;
+            }
+        }
+    }
+
+    &-section{
+        position: relative;
+        background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
+
+        &:before{
+            content: url("../img/decor/bars-and-berries.png");
+            position: absolute;
+            bottom: -124px;
+            left: 0;
+        }
+    }
+}
+

@@ -1,0 +1,11 @@
+.order-section{
+    background: url("../img/decor/blueberry.png") left 18px bottom 20px no-repeat,url("../img/decor/corner-leaf-two.png") right bottom 20px no-repeat, url("../img/decor/background-form.png") center center;
+    position: relative;
+
+    &:before{
+        content: url("../img/decor/leafs-and-blackberry.png");
+        right: 0;
+        top: -160px;
+        position: absolute;
+    }
+}
