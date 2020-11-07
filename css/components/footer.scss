@@ -1,0 +1,42 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    padding: 14px 0;
+
+    @include tablets{
+        font-size: 18px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phones{
+            flex-direction: column;
+        }
+    }
+
+
+}
+
+.contacts{
+    font-style: normal;
+
+    @include phones{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.phone-number--theme--green{
+    color: #497870;
+}
+
+.phone-number--theme--green .phone-number__icon{
+    fill: #497870;
+}

@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61C4D9;
 $darkGreen: #0b4d3c;
@@ -8,12 +12,15 @@ $darkGreen: #0b4d3c;
 //z-indexes
 $z-fixed-menu: 100;
 
+@import "media";
+
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
 @import "layout";
 
 //components
 @import "components/hero";
+@import "components/menu";
 @import "components/header";
 @import "components/features";
 @import "components/btn";
@@ -27,3 +34,6 @@ $z-fixed-menu: 100;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/footer";
+@import "components/socials";

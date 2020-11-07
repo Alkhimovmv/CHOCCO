@@ -1,12 +1,15 @@
 .btn{
-    font-size: 16px;
     font-weight: bold;
-    padding: 18px 35px;
+    padding: rem(20px) rem(38px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     border: none;
+
+    @include tablets {
+        font-size: 15px;
+    }
 
     &--color--white{
         background: #ffffff;

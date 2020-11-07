@@ -2,14 +2,22 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 24px;
+    margin-right: rem(24px);
+
+    @include phones{
+        margin-bottom: rem(10px);
+    }
 
     &--checkbox{
         .radio__visible{
-            border-radius: 5px;
+            border-radius: rem(5px);
 
             &:before{
-                background: url("../img/icons/tick.png") center center no-repeat;
+                content: "";
+                background: url("/img/icons/sprite.svg#checkmark") center center no-repeat;
+                width: 10px;
+                height: 10px;
+                display: block;
             }
         }
     }
@@ -26,17 +34,17 @@
     }
 
     &__visible{
-        width: 26px;
-        height: 26px;
+        width: rem(26px);
+        height: rem(26px);
         position: relative;
         border-radius: 50%;
         background: #ffffff;
-        margin-right: 5px;
+        margin-right: rem(5px);
 
         &:before{
             content: "";
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             background: #365a49;
             border-radius: 50%;
             position: absolute;
