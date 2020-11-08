@@ -762,11 +762,11 @@ img {
 .checkbox__input {
   opacity: 0;
   position: absolute;
-  margin-right: 0.2222222222rem;
 }
 .checkbox__content {
   display: flex;
   align-items: center;
+  margin-right: 0.2222222222rem;
 }
 .checkbox__btn {
   position: relative;
