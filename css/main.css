@@ -944,6 +944,7 @@ img {
 .socials__item:last-child {
   margin-right: 0;
 }
+<<<<<<< HEAD
 
 .modal {
   position: fixed;
@@ -1193,3 +1194,5 @@ img {
   opacity: 1;
   left: 100%;
 }
+=======
+>>>>>>> e19ce77f4f46915d8cd097bfce2cbb904dddbb9c
