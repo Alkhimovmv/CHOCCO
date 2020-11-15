@@ -1,0 +1,44 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #313131;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+
+    &__container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__close{
+        width: rem(20px);
+        height: rem(20px);
+        top: rem(46px);
+        right: rem(46px);
+        position: absolute;
+        cursor: pointer;
+        fill: white;
+    }
+
+    &_active{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    &-menu__link{
+        text-decoration: none;
+        font-size: 36px;
+        color: #ffffff;
+        justify-content: center;
+        display: flex;
+        margin-bottom: rem(26px);
+    }
+}
+

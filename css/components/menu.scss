@@ -1,14 +1,14 @@
 .menu{
-    margin: 0 30px;
+    margin: 0 rem(30px);
 
     @include tablets {
         display: none;
     }
 
     &__item {
-        margin-right: 26px;
-        margin-bottom: 10px;
-        padding-top: 5px;
+        margin-right: rem(22px);
+        margin-bottom: rem(10px);
+        padding-top: rem(5px);
         &:last-child{
             margin-right: 0;
         }
