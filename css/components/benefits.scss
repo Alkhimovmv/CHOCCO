@@ -9,6 +9,8 @@
         flex: 1;
         padding: 0 3%;
         position: relative;
+        padding: 0 28px;
+
 
         @include phones{
             padding: 0;
@@ -57,6 +59,8 @@
             position: absolute;
             bottom: rem(-124px);
             left: 0;
+            z-index: 1;
+
 
             @include phones{
                 display: none;

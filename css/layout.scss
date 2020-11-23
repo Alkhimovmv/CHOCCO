@@ -24,6 +24,25 @@ body{
     margin: 0;
 }
 
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: inherit;
+    cursor: pointer;
+}
+
+button, select{
+    text-transform: none;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 .wrapper{
     position: relative;
     width: 100%;

@@ -14,7 +14,7 @@ close.addEventListener('click', ()=>{
    modal.classList.remove('modal_active');
 });
 
-
+/////////////////////////////////////////////////
 
 const phone = document.querySelector('#phone');
 
@@ -42,34 +42,58 @@ phone.addEventListener('keydown', function(event) {
 
 
 
+///////////////////////
+function validateForm(form) {
+   let valid = true;
 
-const form = document.querySelector('#form');
-const sendButton = document.querySelector('#sendButton');
+   if (!validateField(form.elements.name)) {
+      valid = false;
+   }
 
-sendButton.addEventListener('click', function(event) {
-   event.preventDefault();
+   if (!validateField(form.elements.phone)) {
+      valid = false;
+   }
 
-   console.log(form.elements.name.value);
-   console.log(form.elements.phone.value);
-   console.log(form.elements.street.value);
-   console.log(form.elements.building.value);
-   console.log(form.elements.block.value);
-   console.log(form.elements.appartment.value);
-   console.log(form.elements.floor.value);
-   console.log(form.elements.comment.value);
-   
-   if (form.elements['shortChanges'].checked == true) {
-      console.log('потребуется сдача');
-   };
+   if (!validateField(form.elements.comment)) {
+      valid = false;
+   }
 
-   if (form.elements['card'].checked == true) {
-      console.log('оплата по карте');
-   };
+   return valid;
+}
 
-   if (form.elements.call.checked == true) {
-      console.log('не перезванивать');
-   } else {
-      console.log('перезванивать');
-   };
-   
-})
+function validateField(field) {
+   field.nextElementSibling.textContent = field.validationMessage;
+   return field.checkValidity();
+}
+
+
+//////////////////////////////////////////////////////////
+
+// const form = document.querySelector('#form');
+// const sendButton = document.querySelector('#sendButton');
+
+// sendButton.addEventListener('click', function(event) {
+//    event.preventDefault();
+
+
+//    if (validateForm(form)) {
+//       const data = {
+//          name: form.elements.name.value,
+//          phone: form.elements.phone.value,
+//          comment: form.elements.comment.value,
+//          to: "alkhimovmv@yandex.ru"
+//       };
+//       console.log(data);
+//       const xhr = new XMLHttpRequest();
+//       xhr.responseType = 'json';
+//       xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+//       xhr.setRequestHeader('content-type', 'application/json');
+//       xhr.send(JSON.stringify(data));
+//       xhr.addEventListener('load', () => {
+//          if(xhr.response.status) {
+//             console.log('Все ок!');
+//          }
+//       });
+//    }
+// });
+

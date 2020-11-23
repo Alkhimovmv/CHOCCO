@@ -5,8 +5,13 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 
-    &--active{
+    &:hover{
+        border-color: #0f5a47;
+    }
+
+    &.active{
         border-color: #0f5a47;
     }
 

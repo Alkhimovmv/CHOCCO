@@ -11,6 +11,10 @@
         font-size: 15px;
     }
 
+    @include phones {
+        font-size: 13px;
+    }
+
     
 
     &--color--white{

@@ -1,5 +1,4 @@
 .modal{
-    @include tablets{
         position: fixed;
         top: 0;
         left: 0;
@@ -41,6 +40,5 @@
             display: flex;
             margin-bottom: rem(26px);
         }
-    }
 }
 

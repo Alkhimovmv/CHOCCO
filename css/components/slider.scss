@@ -125,7 +125,7 @@
         margin-right: rem(10px);
 
         @include phones{
-            font-size: 60px;
+            font-size: 47px;
         }
     }
 }
@@ -139,6 +139,35 @@
         flex-direction: row;
         position: relative;
     }
+}
+
+.order-section{
+    background: url("../img/decor/blueberry.png") left rem(18px) bottom rem(20px) no-repeat,url("../img/decor/corner-leaf-two.png") right bottom rem(20px) no-repeat, url("../img/decor/background-form.png") center center;
+    position: relative;
+
+    @include tablets{
+        background: url("../img/decor/background-form.png") center center;
+
+    }
+
+    &:before{
+        content: "";
+        background: url("../img/decor/leafs-and-blackberry.png");
+        top: rem(-154px);
+        width: rem(196px);
+        height: rem(264px);
+        right: rem(-22px);
+        
+        position: absolute;
+        background-size: cover;
+        
+        @include tablets{
+            width: rem(110px);
+            height: rem(147px);
+            top: rem(-76px);
+        }
+    }
+    
 }
 
 .ingredients{
