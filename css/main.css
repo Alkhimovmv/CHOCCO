@@ -1050,7 +1050,11 @@ img {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+<<<<<<< HEAD
   padding: 0 1.6666666667rem;
+=======
+  padding: 0 rem(30px);
+>>>>>>> 23f7bb13fc240ae9f0a058459faa62a56346afaa
 }
 @media screen and (max-width: 768px) {
   .slider__item {
