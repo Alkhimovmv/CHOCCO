@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
 
+    &__container{
+        height: 100%;
+    }
+
     &-section{
         position: relative;
         &:before{

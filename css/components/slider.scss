@@ -23,7 +23,7 @@
     }
 
     &__left{
-        width: 50%;
+        width: 68%;
 
         @include tablets{
             width: 58%;
@@ -121,9 +121,9 @@
 
     &__price{
         color: #000000;
-        font-size: 72px;
+        font-size: 64px;
         font-weight: lighter;
-        margin-right: rem(10px);
+        margin-right: rem(30px);
 
         @include phones{
             font-size: 47px;
@@ -139,6 +139,7 @@
         justify-content: center;
         flex-direction: row;
         position: relative;
+        max-width: 1040px;
     }
 }
 
@@ -199,4 +200,29 @@
         color: #ffffff;
         font-size: 14px;
     }
+}
+
+
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+}
+
+.bx-wrapper .bx-next {
+    background: url(../img/icons/controls.png) no-repeat;
+}
+
+.bx-wrapper .bx-prev {
+    background: url(../img/icons/controls.png) no-repeat;
+    transform: rotate(180deg);
+}
+
+.bx-wrapper .bx-controls-direction a {
+    margin-top: 0px;
+}
+
+.bx-wrapper .bx-pager {
+    display: none;
 }

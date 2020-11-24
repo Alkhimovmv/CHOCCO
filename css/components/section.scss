@@ -13,6 +13,10 @@
         text-transform: uppercase;
         color: #000;
 
+        &-white{
+            color: #ffffff;
+        }
+
         &-reviews{
             margin-bottom: rem(28px);
         }
