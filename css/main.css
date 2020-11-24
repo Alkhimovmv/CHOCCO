@@ -1260,6 +1260,10 @@ img {
   display: none;
 }
 
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+  background-position: 0;
+}
+
 .composition {
   padding: 1.6666666667rem 1.6666666667rem;
   width: 15.1666666667rem;

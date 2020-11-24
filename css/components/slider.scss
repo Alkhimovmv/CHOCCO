@@ -226,3 +226,7 @@
 .bx-wrapper .bx-pager {
     display: none;
 }
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    background-position: 0;
+}
