@@ -34,6 +34,7 @@
         margin-right: rem(20px);
         max-width: rem(260px);
         position: relative;
+        padding-left: 16px;
 
         @include tablets{
             margin-bottom: rem(14px);

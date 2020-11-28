@@ -49,10 +49,15 @@ button:focus {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 0;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   background-color: #ffffff;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -110,7 +115,7 @@ img {
 .hero {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #ffffff;
   position: relative;
@@ -335,7 +340,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -367,9 +372,7 @@ img {
   color: inherit;
 }
 .section-map {
-  background: url("../img/map.png") top center no-repeat;
   position: relative;
-  height: 100%;
 }
 
 .headline {
@@ -851,6 +854,7 @@ img {
   top: 30%;
   right: 3%;
   z-index: 100;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
@@ -882,6 +886,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.fixed-menu--shadowed {
+  color: #000000;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background: #000;
 }
 
 .hamburger {
@@ -1337,6 +1352,7 @@ img {
   margin-right: 1.1111111111rem;
   max-width: 14.4444444444rem;
   position: relative;
+  padding-left: 16px;
 }
 @media screen and (max-width: 768px) {
   .team__item {
@@ -1395,39 +1411,90 @@ img {
   transform: rotate(180deg);
 }
 
-.video {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.video__player {
+.player {
   position: relative;
-  max-width: 660px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.video__player-img {
+.player__splash {
   position: absolute;
-  left: 307px;
-  top: 149px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/player/cover.png) center center/cover no-repeat;
   cursor: pointer;
 }
-.video__player-img--active {
-  opacity: 0;
+.player__splash:before {
+  content: "";
+  height: 118px;
+  width: 82px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../img/player/Play_white.png) center center no-repeat;
+  display: block;
+  transform: translate(-50%, -50%);
 }
-.video__toolbar {
-  width: 660px;
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 35px;
   background-color: #3e3e3e;
   margin-top: -3px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.player-section__container {
+  position: relative;
+  margin: 0 auto;
+  width: 660px;
+  height: 403px;
+}
+.player__start {
+  cursor: pointer;
+  padding-right: 25px;
+}
+.player__duration {
+  padding-bottom: 5px;
+}
+.player__playback {
+  height: 16px;
+  width: 446px;
+  position: relative;
+}
+.player__playback:before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  display: block;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.player__playback-button {
+  background: #626262;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
 }
 
-#player {
-  min-width: 660px;
-  max-width: 660px;
-  min-height: 370px;
-  max-height: 370px;
+.active .player__splash:before, .active .player__splash {
+  background: none;
 }
 
 .sound {
@@ -1443,13 +1510,17 @@ img {
   margin-top: -5px;
 }
 
-.duration {
+.pause {
+  display: none;
+}
+
+.player__duration {
   display: flex;
   align-items: center;
 }
 
 .duration__img {
-  padding: 0.2777777778rem 1.1111111111rem;
+  padding: 0.2777777778rem 0;
   cursor: pointer;
 }
 
@@ -1477,6 +1548,7 @@ img {
   width: 0.7222222222rem;
   height: 0.7222222222rem;
   border-radius: 50%;
+  left: 10%;
 }
 
 .duration__circle {
@@ -1559,6 +1631,7 @@ img {
   width: 100%;
   position: relative;
   line-height: 1.5;
+  color: #fff;
 }
 .menu-acco__trigger {
   width: 5.6666666667rem;
