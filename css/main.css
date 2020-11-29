@@ -1322,9 +1322,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.team__container {
-  height: 100%;
-}
 .team-section {
   position: relative;
 }
@@ -1353,11 +1350,13 @@ img {
   max-width: 14.4444444444rem;
   position: relative;
   padding-left: 16px;
+  min-height: 23.8888888889rem;
 }
 @media screen and (max-width: 768px) {
   .team__item {
     margin-bottom: 0.7777777778rem;
     margin-right: 0;
+    min-height: auto;
   }
 }
 .team__member {
@@ -1416,6 +1415,11 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    transform: scale(0.65);
+  }
 }
 .player__splash {
   position: absolute;
