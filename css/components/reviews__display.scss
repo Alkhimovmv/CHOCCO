@@ -67,6 +67,10 @@
             opacity: 1;
             pointer-events: unset;
         }
+
+        @include tablets {
+            display: block;
+        }
     }
 
     &__avatar{
@@ -76,6 +80,8 @@
         @include tablets{
             width: rem(130px);
             height: rem(132px);
+            margin: 0 auto;
+            flex: none;
         }
 
         &-img{
@@ -94,6 +100,7 @@
         @include tablets{
             padding-top: rem(25px);
             padding-right: 0;
+            margin-left: 0;
         }
     }
 

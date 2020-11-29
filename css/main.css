@@ -573,6 +573,11 @@ img {
   opacity: 1;
   pointer-events: unset;
 }
+@media screen and (max-width: 768px) {
+  .reviews__item {
+    display: block;
+  }
+}
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
@@ -581,6 +586,8 @@ img {
   .reviews__avatar {
     width: 7.2222222222rem;
     height: 7.3333333333rem;
+    margin: 0 auto;
+    flex: none;
   }
 }
 .reviews__avatar-img {
@@ -598,6 +605,7 @@ img {
   .reviews__content {
     padding-top: 1.3888888889rem;
     padding-right: 0;
+    margin-left: 0;
   }
 }
 .reviews__title {
