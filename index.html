@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Chocco</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.min.css">
 </head>
 
 <body>
@@ -484,7 +484,39 @@
 
             <section data-sidemenu-theme="white" data-section-id="menu" class="section vertical-accordeon">
                 <h2 class="section__title section__title-white vertical-accordeon__title">Меню</h2>
-                <ul class="menu-acco">
+                <ul class="menu-acco menu-acco--trigger">
+                    <li class="menu-acco__item">
+                        <a href="#" class="menu-acco__trigger" style="background-image: url('./img/vertical-accordeon/coco.png')">
+                            <span class="menu-acco__trigger-text">Батночики с молоком</span>
+                        </a>
+                        <div class="menu-acco__content">
+                            <div class="menu-acco__container">
+                                <p class="menu-acco__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+                            </div>
+                        </div>
+                        <li class="menu-acco__item">
+                            <a href="#" class="menu-acco__trigger" style="background-image: url('./img/vertical-accordeon/granola-bars.png')">
+                                <span class="menu-acco__trigger-text">С мёдом и фруктами</span>
+                            </a>
+                            <div class="menu-acco__content">
+                                <div class="menu-acco__container">
+                                    <p class="menu-acco__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-acco__item">
+                            <a href="#" class="menu-acco__trigger" style="background-image: url('./img/vertical-accordeon/blueberry-acc.png')">
+                                <span class="menu-acco__trigger-text">Дикие ягоды</span>
+                            </a>
+                            <div class="menu-acco__content">
+                                <div class="menu-acco__container">
+                                    <p class="menu-acco__text">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </li>
+                </ul>
+                <ul class="menu-acco menu-acco--content">
                     <li class="menu-acco__item">
                         <a href="#" class="menu-acco__trigger" style="background-image: url('./img/vertical-accordeon/coco.png')">
                             <span class="menu-acco__trigger-text">Батночики с молоком</span>
@@ -755,43 +787,51 @@
                     </div>
                 </footer>
             </section>
-
-            <div class="modal" id="menu">
-                <div class="modal__container">
-                    <nav class="modal-menu">
-                        <ul class="modal-menu__list">
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="benefits" class="modal-menu__link">О нас</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="chocolates" class="modal-menu__link">Батончики</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="team" class="modal-menu__link">Команда</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="menu" class="modal-menu__link">Меню</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="reviews" class="modal-menu__link">Отзывы</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="player" class="modal-menu__link">Как мы работаем</a>
-                            </li>
-                            <li class="modal-menu__item">
-                                <a href="#" data-scroll-to="contacts" class="modal-menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <svg id="modal__close" class="modal__close">
-                        <use xlink:href="./img/icons/sprite.svg#close"></use>
-                    </svg>
-                </div>
+        </div>
+    </div>
+    <div id="modal-form" class="modal-form">
+        <div class="modal-form__container">
+            <div class="modal-form__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal-form__button__container">
+                <a href="#" class="btn app-close-modal btn--color--green">Закрыть</a>
             </div>
         </div>
     </div>
-
-    <nav class="fixed-menu">
+    <div class="modal" id="menu">
+        <div class="modal__container">
+            <nav class="modal-menu">
+                <ul class="modal-menu__list">
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="benefits" class="modal-menu__link">О нас</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="chocolates" class="modal-menu__link">Батончики</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="team" id="modal-menu__link" class="modal-menu__link">Команда</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="menu" class="modal-menu__link">Меню</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="reviews" class="modal-menu__link">Отзывы</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="player" class="modal-menu__link">Как мы работаем</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a href="#" data-scroll-to="contacts" class="modal-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <svg id="modal__close" class="modal__close">
+                <use xlink:href="./img/icons/sprite.svg#close"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="fixed-menu">
         <ul class="fixed-menu__list">
             <li class="fixed-menu__item fixed-menu__item--active">
                 <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
@@ -821,34 +861,17 @@
                 <a href="#" data-scroll-to="contacts" class="fixed-menu__link"></a>
             </li>
         </ul>
-    </nav>
-
-    <div id="modal-form" class="modal-form">
-        <div class="modal-form__container">
-            <div class="modal-form__content">
-                Сообщение отправлено
-            </div>
-            <div class="modal-form__button__container">
-                <a href="#" class="btn app-close-modal btn--color--green">Закрыть</a>
-            </div>
-        </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/tabs.js"></script>
-    <script src="scripts/accordeon.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/modal-form.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="scripts/player.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=bc289d56-ab76-40f5-962c-aa25fa2c7752&lang=ru_RU" type="text/javascript"></script>
-    <script src="scripts/map.js"></script>
-    <script src="scripts/ops.js"></script>
+    <script src="main.min.js"></script>
+    
 </body>
 
 </html>
