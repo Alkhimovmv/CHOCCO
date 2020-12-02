@@ -1,0 +1,134 @@
+.vertical-accordeon{
+    background:  url("../img/vertical-accordeon/cookie.png") 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &:before{
+        content: url("../img/decor/raspberry.png");
+        position: absolute;
+        top: rem(-66px);
+        left: rem(55px);
+
+        @include phones {
+            left: 0;
+            transform: scale(0.8);
+        }
+    }
+
+    &__title{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        @include phones {
+            left: rem(10px);
+            font-size: 40px;
+        }
+    }
+}
+
+.menu-acco{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+
+    &__item{
+        height: 100%;
+        visibility: visible;
+        display: flex;
+
+        &.active{
+            .menu-acco__content{
+                transition: width .4s;
+                color: #fff;
+            }
+        }
+    }
+
+
+    &__content{
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+        background: #333537;
+        opacity: .9;
+        transition: width .4s;
+        color: rgba($color: #ffffff, $alpha: 0);
+    }
+
+    &__text{
+        font-size: 16px;
+        padding: rem(40px) rem(30px);
+        width: 100%;
+        position: relative;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    &__trigger{
+        width: rem(102px);
+        height: 100%;
+        text-decoration: none;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        @include phones {
+            width: rem(90px);
+        }
+
+        &-text{
+            font-size: 48px;
+            color: #ffffff;
+            font-weight: normal;
+            white-space: nowrap;
+            writing-mode: tb-rl;
+            transform: rotate(180deg);
+            margin-bottom: rem(40px);
+            @include phones {
+                font-size: 40px;
+            }
+        }
+    }
+
+    &--content{
+        right: rem(-102px);
+        @include phones {
+            right: rem(-80px);
+        }
+        .menu-acco__text{
+            padding-right: rem(130px);
+        }
+    }
+
+    &--content .menu-acco__item{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &--trigger{
+        .menu-acco__item{
+            .menu-acco__trigger{
+                overflow: hidden;
+                transition: width .3s;
+            }
+
+            &.hidden{
+                .menu-acco__trigger{
+                    width: 0;
+                }
+            }
+        }
+    }
+}

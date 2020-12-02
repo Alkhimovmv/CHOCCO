@@ -1,0 +1,43 @@
+.composition{
+    padding: rem(30px) rem(30px);
+    width: rem(273px);
+    background: #F2F5F4;
+    box-shadow: rem(4px) rem(4px) rem(40px) rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    opacity: 0;
+    transition: opacity .3s;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        margin-bottom: rem(20px);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__name{
+        width: 50%;
+        text-align: start;
+    }
+
+    &__amount{
+        padding-right: rem(10px);
+    }
+
+    &__icon{
+        width: rem(32px);
+        height: rem(32px);
+    }
+}
+
+.ingredients:hover .composition{
+    opacity: 1;
+    left: 100%;
+}

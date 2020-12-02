@@ -1,0 +1,44 @@
+.section{
+    height: 100%;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__title{
+        font-size: rem(48px);
+        font-weight: bold;
+        margin-bottom: rem(60px);
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+
+        &-white{
+            color: #ffffff;
+        }
+
+        &-reviews{
+            margin-bottom: rem(28px);
+        }
+
+        &-form{
+            @include tablets {
+                margin-bottom: rem(27px);
+            }
+        }
+    }
+
+    &--font-color--green{
+        color: $darkGreen;
+
+        .section__title{
+            color: inherit;
+        }
+    }
+
+    &-map{
+        //background: url("../img/map.png") top center no-repeat;
+        position: relative;
+    }
+
+}
