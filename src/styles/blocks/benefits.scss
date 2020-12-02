@@ -9,7 +9,7 @@
         flex: 1;
         padding: 0 3%;
         position: relative;
-        padding: 0 28px;
+        padding: 0 rem(28px);
 
 
         @include phones{
@@ -18,7 +18,7 @@
         }
 
         &:before{
-            content: url("../img/decor/separator.png");
+            content: url("./img/decor/separator.png");
             position: absolute;
             top: rem(50px);
             right: 0;
@@ -44,7 +44,7 @@
 
     &-section{
         position: relative;
-        background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
+        background: url("./img/decor/side-leaf.png") left top 57% no-repeat;
 
         @include tablets{
             background-position: left top 12%;   
@@ -55,7 +55,7 @@
         }
 
         &:before{
-            content: url("../img/decor/bars-and-berries.png");
+            content: url("./img/decor/bars-and-berries.png");
             position: absolute;
             bottom: rem(-124px);
             left: 0;

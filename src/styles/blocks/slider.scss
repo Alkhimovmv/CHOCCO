@@ -144,17 +144,17 @@
 }
 
 .order-section{
-    background: url("../img/decor/blueberry.png") left rem(18px) bottom rem(20px) no-repeat,url("../img/decor/corner-leaf-two.png") right bottom rem(20px) no-repeat, url("../img/decor/background-form.png") center center;
+    background: url("./img/decor/blueberry.png") left rem(18px) bottom rem(20px) no-repeat,url("../img/decor/corner-leaf-two.png") right bottom rem(20px) no-repeat, url("../img/decor/background-form.png") center center;
     position: relative;
 
     @include tablets{
-        background: url("../img/decor/background-form.png") center center;
+        background: url("./img/decor/background-form.png") center center;
 
     }
 
     &:before{
         content: "";
-        background: url("../img/decor/leafs-and-blackberry.png");
+        background: url("./img/decor/leafs-and-blackberry.png");
         top: rem(-154px);
         width: rem(196px);
         height: rem(264px);
@@ -211,11 +211,11 @@
 }
 
 .bx-wrapper .bx-next {
-    background: url(../img/icons/controls.png) no-repeat;
+    background: url("./img/icons/controls.png") no-repeat;
 }
 
 .bx-wrapper .bx-prev {
-    background: url(../img/icons/controls.png) no-repeat;
+    background: url("./img/icons/controls.png") no-repeat;
     transform: rotate(180deg);
 }
 

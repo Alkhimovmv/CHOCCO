@@ -1,9 +1,9 @@
 .reviews{
     &-section{
-        background: url("../img/decor/strawberry.png") right top rem(66px) no-repeat;
+        background: url("./img/decor/strawberry.png") right top rem(66px) no-repeat;
         position: relative;
         &:before{
-            content: url("../img/decor/side-leaf-two.png");
+            content: url("./img/decor/side-leaf-two.png");
             position: absolute;
             bottom: rem(-178px);
             left: 0;
@@ -11,7 +11,7 @@
         }
         
         &:after{
-            content: url("../img/decor/berries.png");
+            content: url("./img/decor/berries.png");
             position: absolute;
             bottom: rem(-112px);
             left: 0;
@@ -20,7 +20,7 @@
     }
 
     &__display{
-        background: #f8faf9 url("../img/decor/drown-berries.png") right top no-repeat;
+        background: #f8faf9 url("./img/decor/drown-berries.png") right top no-repeat;
         padding: rem(50px) rem(45px) rem(34px);
         margin-bottom: rem(20px);
         overflow: hidden;

@@ -18,17 +18,17 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url(../img/player/cover.png) center center/cover no-repeat;
+        background: url("./img/player/cover.png") center center/cover no-repeat;
         cursor: pointer;
 
         &:before{
             content: "";
-            height: 118px;
-            width: 82px;
+            height: rem(118px);
+            width: rem(82px);
             position: absolute;
             top: 50%;
             left: 50%;
-            background: url(../img/player/Play_white.png) center center no-repeat;
+            background: url("./img/player/Play_white.png") center center no-repeat;
             display: block;
             transform: translate(-50%, -50%);
         }
@@ -39,38 +39,38 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 35px;
+        height: rem(35px);
         background-color: #3e3e3e;
-        margin-top: -3px;
+        margin-top: rem(-3px);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 25px;
+        padding: 0 rem(25px);
     }
 
     &-section__container{
         position: relative;    
         margin: 0 auto;
-        width: 662px;
+        width: rem(662px);
 
         @include tablets {
             width: 100%;
-            padding: 0 35px;
+            padding: 0 rem(35px);
         }
     }
 
     &__start{
         cursor: pointer;
-        padding-right: 25px;
+        padding-right: rem(25px);
     }
 
     &__duration{
-        padding-bottom: 5px;
+        padding-bottom: rem(5px);
     }
 
     &__playback{
-        height: 16px;
-        width: 446px;
+        height: rem(16px);
+        width: rem(446px);
         position: relative;
 
         &:before{
@@ -90,8 +90,8 @@
             background: #626262;
             border-radius: 50%;
             border: none;
-            width: 12px;
-            height: 12px;
+            width: rem(12px);
+            height: rem(12px);
             padding: 0;
             position: absolute;
             top: 50%;
@@ -103,7 +103,7 @@
     &-section{
         position: relative;
         &:before{
-            content: url("../img/decor/corner-leaf.png");
+            content: url("./img/decor/corner-leaf.png");
             position: absolute;
             bottom: 5%;
             left: 8%;
@@ -115,7 +115,7 @@
         }
     
         &:after{
-            content: url("../img/decor/corner-leaf-player.png");
+            content: url("./img/decor/corner-leaf-player.png");
             position: absolute;
             top: 20%;
             right: 10%;
@@ -135,15 +135,15 @@
 .sound {
     display: flex;
     align-items: center;
-    padding-left: 30px;
+    padding-left: rem(30px);
 
     &__mic{
         cursor: pointer;
     }
 
     &__volume{
-        margin-left: 30px;   
-        margin-top: -5px; 
+        margin-left: rem(30px);   
+        margin-top: rem(-5px); 
     }
 }
 

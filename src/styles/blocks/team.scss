@@ -5,14 +5,14 @@
     &-section{
         position: relative;
         &:before{
-            content: url(../img/decor/blueberries.png);
+            content: url("./img/decor/blueberries.png");
             position: absolute;
             top: rem(-38px);
             right: rem(14px);
             z-index: 10;
         }
         &:after{
-            content: url(../img/decor/side-leaf-three.png) ;
+            content: url("./img/decor/side-leaf-three.png") ;
             position: absolute;
             top: rem(-180px);
             right: 0;
