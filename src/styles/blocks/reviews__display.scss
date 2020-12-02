@@ -1,0 +1,137 @@
+.reviews{
+    &-section{
+        background: url("./img/decor/strawberry.png") right top rem(66px) no-repeat;
+        position: relative;
+        &:before{
+            content: url("./img/decor/side-leaf-two.png");
+            position: absolute;
+            bottom: rem(-178px);
+            left: 0;
+            z-index: 1;
+        }
+        
+        &:after{
+            content: url("./img/decor/berries.png");
+            position: absolute;
+            bottom: rem(-112px);
+            left: 0;
+            z-index: 10;
+        }
+    }
+
+    &__display{
+        background: #f8faf9 url("./img/decor/drown-berries.png") right top no-repeat;
+        padding: rem(50px) rem(45px) rem(34px);
+        margin-bottom: rem(20px);
+        overflow: hidden;
+        position: relative;
+
+        &:before{
+            content: "";
+            display: block;
+            width: rem(90px);
+            height: rem(90px);
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: rem(-65px);
+        }
+    }
+
+    &__list{
+        display: flex;
+        position: relative;
+        min-height: rem(280px);
+
+        @include tablets{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    &__item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: .3s;
+        opacity: 0;
+        display: flex;
+
+        &.active{
+            position: static;
+            opacity: 1;
+            pointer-events: unset;
+        }
+
+        @include tablets {
+            display: block;
+        }
+    }
+
+    &__avatar{
+        width: rem(254px);
+        height: rem(260px);
+
+        @include tablets{
+            width: rem(130px);
+            height: rem(132px);
+            margin: 0 auto;
+            flex: none;
+        }
+
+        &-img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content{
+        flex: 1;
+        padding-right: rem(136px);
+        margin-left: rem(20px);
+        padding-top: rem(8px);
+
+        @include tablets{
+            padding-top: rem(25px);
+            padding-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__title{
+        font-size: rem(30px);
+        font-weight: bold;
+        margin-bottom: rem(18px);
+        color: black;
+
+        @include tablets{
+            margin-bottom: rem(14px);
+        }
+    }
+
+    &__text{
+        margin-bottom: rem(26px);
+        line-height: 1.25;
+    }
+
+    &__author{
+        font-size: rem(18px);
+        font-weight: bold;
+        color: black;
+    }
+
+    &__switcher{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+

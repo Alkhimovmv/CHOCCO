@@ -1,0 +1,24 @@
+.socials{
+    display: flex;
+    flex-direction: row;
+
+    &__icon{
+        width: rem(20px);
+        height: rem(20px);
+        fill: #b3b3b3;
+
+        &:hover{
+            fill: black;
+        }
+    }
+
+    
+
+    &__item{
+        margin-right: rem(18px);
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
