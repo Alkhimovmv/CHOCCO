@@ -1,3 +1,0 @@
-$('.slider__list').bxSlider({
-        
-});
